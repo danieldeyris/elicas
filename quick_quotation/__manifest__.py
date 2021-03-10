@@ -13,8 +13,8 @@
                              'sale_management',
                             ],
   "data"                 :  [
-    'views/sale_views.xml',
     'wizard/order_line_qty.xml',
+    'views/sale_views.xml',
     'security/ir.model.access.csv',
     'views/barcode_templates.xml',
   ],
