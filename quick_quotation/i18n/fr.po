@@ -1,0 +1,557 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* quick_quotation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-03-10 14:33+0000\n"
+"PO-Revision-Date: 2021-03-10 14:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: quick_quotation
+#: model:ir.actions.act_window,name:quick_quotation.act_open_wizard_line_qty
+msgid "Add immediately missing scanned product"
+msgstr "Ajouter article manquant"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Add product"
+msgstr "Ajouter Article"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__product_barcode
+#, python-format
+msgid "Barcode"
+msgstr "COde-Barre"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order___barcode_scanned
+msgid "Barcode Scanned"
+msgstr "Code Barre Scanné"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "Barcode Scanning"
+msgstr "Scan Code-Barre"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Cancel"
+msgstr "Annuler"
+
+#. module: quick_quotation
+#: model:ir.model.fields.selection,name:quick_quotation.selection__quick_sale_order__state__cancel
+msgid "Cancelled"
+msgstr "Annulé"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "Close"
+msgstr "Fermer"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__company_id
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__company_id
+msgid "Company"
+msgstr "Société"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#: model_terms:ir.ui.view,arch_db:quick_quotation.view_quick_quotation_form
+#, python-format
+msgid "Confirm"
+msgstr "Confirmer"
+
+#. module: quick_quotation
+#: model_terms:ir.actions.act_window,help:quick_quotation.action_quick_quotations
+msgid "Create a new quick quotation, the first step of a new sale!"
+msgstr "Créer un nouveau devis, première étape"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__create_uid
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__create_uid
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty__create_uid
+msgid "Created by"
+msgstr "Créé par"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__create_date
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__create_date
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty__create_date
+msgid "Created on"
+msgstr "Créé la"
+
+#. module: quick_quotation
+#: model_terms:ir.ui.view,arch_db:quick_quotation.view_quotation_tree
+msgid "Creation Date"
+msgstr "Créé le"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__partner_id
+msgid "Customer"
+msgstr "Client"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#: model_terms:ir.ui.view,arch_db:quick_quotation.set_order_line_qty
+#, python-format
+msgid "Discard"
+msgstr "Annuler"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__display_name
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__display_name
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty__display_name
+msgid "Display Name"
+msgstr "Nom"
+
+#. module: quick_quotation
+#: model:ir.model.fields.selection,name:quick_quotation.selection__quick_sale_order__state__done
+msgid "Done"
+msgstr "Fait"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "Download"
+msgstr "Télécharger"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Edit"
+msgstr "Modifier"
+
+#. module: quick_quotation
+#: model:ir.model.fields.selection,name:quick_quotation.selection__quick_sale_order__state__in_progress
+msgid "En Cours"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "From"
+msgstr "DE"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__id
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__id
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty__id
+msgid "ID"
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model.fields,help:quick_quotation.field_quick_sale_order_line__product_barcode
+msgid "International Article Number used for product identification."
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "Inventory Adjustments"
+msgstr "Ajustement Inventaire"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order____last_update
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line____last_update
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__write_uid
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__write_uid
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__write_date
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__write_date
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: quick_quotation
+#: code:addons/quick_quotation/models/sale.py:0
+#, python-format
+msgid "New"
+msgstr "Nouveau"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Next"
+msgstr "Suivant"
+
+#. module: quick_quotation
+#: model_terms:ir.ui.view,arch_db:quick_quotation.view_quotation_tree
+msgid "Number"
+msgstr "Nombre"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "Operations"
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__order_line
+#: model_terms:ir.ui.view,arch_db:quick_quotation.view_quick_quotation_form
+msgid "Order Lines"
+msgstr "Lignes Commande"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__name
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__order_id
+msgid "Order Reference"
+msgstr "Référence Commande"
+
+#. module: quick_quotation
+#: model_terms:ir.ui.view,arch_db:quick_quotation.set_order_line_qty
+msgid "Package"
+msgstr "Colis"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Previous"
+msgstr "Précédent"
+
+#. module: quick_quotation
+#: model:ir.model.fields,help:quick_quotation.field_quick_sale_order_line__price_unit
+msgid "Price at which the product is sold to customers."
+msgstr "Prix de vente"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Print Barcodes PDF"
+msgstr "Imprimer Code-Barre PDF"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Print Barcodes ZPL"
+msgstr "Imprimer Code-Barre ZPL"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Print Delivery Slip"
+msgstr "Imprimer bon de livraison"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Print Inventory"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Print Picking Operations"
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__product_id
+msgid "Product"
+msgstr "Article"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__product_template_id
+msgid "Product Template"
+msgstr "Article Modèle"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Put In Pack"
+msgstr "Mettre dans un colis"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__product_uom_qty
+#: model:ir.model.fields,field_description:quick_quotation.field_set_order_line_qty__product_uom_qty
+msgid "Quantity"
+msgstr "Quantité"
+
+#. module: quick_quotation
+#: model_terms:ir.ui.view,arch_db:quick_quotation.view_quotation_tree
+msgid "Quick Quotation"
+msgstr "Devis rapide"
+
+#. module: quick_quotation
+#: model:ir.actions.act_window,name:quick_quotation.action_quick_quotations
+#: model:ir.ui.menu,name:quick_quotation.menu_quick_sale_quotations
+msgid "Quick Quotations"
+msgstr "Devis rapides"
+
+#. module: quick_quotation
+#: model:ir.model.fields.selection,name:quick_quotation.selection__quick_sale_order__state__draft
+msgid "Quotation"
+msgstr "Devis"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Return"
+msgstr "Retour"
+
+#. module: quick_quotation
+#: model:ir.model,name:quick_quotation.model_quick_sale_order
+#: model_terms:ir.ui.view,arch_db:quick_quotation.view_quick_quotation_form
+msgid "Sales Order"
+msgstr "Commande Vente"
+
+#. module: quick_quotation
+#: model:ir.model,name:quick_quotation.model_quick_sale_order_line
+msgid "Sales Order Line"
+msgstr ""
+
+#. module: quick_quotation
+#: model_terms:ir.ui.view,arch_db:quick_quotation.view_quick_quotation_form
+msgid "Sales Order Lines"
+msgstr "Lignes Commande Vente"
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__price_unit
+msgid "Sales Price"
+msgstr "Prix de Vente"
+
+#. module: quick_quotation
+#: model_terms:ir.ui.view,arch_db:quick_quotation.set_order_line_qty
+msgid "Save"
+msgstr "Sauvegarder"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "Scan a"
+msgstr "Scanner un"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "Scan an"
+msgstr "Scanner un"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Scan more products, or scan a new source location"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Scan more products, or scan the destination location"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Scan products"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Scan the serial or lot number of the product"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Scan the source location, or scan a product"
+msgstr ""
+
+#. module: quick_quotation
+#: code:addons/quick_quotation/models/sale.py:0
+#, python-format
+msgid "Scanned barcode %s is not related to any product."
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Scrap"
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order_line__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model.fields,field_description:quick_quotation.field_quick_sale_order__state
+msgid "Status"
+msgstr "Statut"
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "This inventory adjustment is already done"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "This picking is already cancelled"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "This picking is already done"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "To"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#: code:addons/quick_quotation/static/src/xml/qweb_templates.xml:0
+#, python-format
+msgid "Validate"
+msgstr "Valider"
+
+#. module: quick_quotation
+#: model:ir.model.fields,help:quick_quotation.field_quick_sale_order___barcode_scanned
+msgid "Value of the last barcode scanned."
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid ""
+"We have created a few demo data with barcodes for you to explore the "
+"features. Print the"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "commands for Inventory"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "document"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "location"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "operation type"
+msgstr ""
+
+#. module: quick_quotation
+#: code:addons/quick_quotation/models/sale.py:0
+#, python-format
+msgid "partner is mandatory."
+msgstr ""
+
+#. module: quick_quotation
+#: model:ir.model,name:quick_quotation.model_set_order_line_qty
+msgid "set.order.line.qty"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "stock barcodes sheet"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "to check out what this module can do! You can also print the barcode"
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "to create a new transfer from this location."
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "to create a new transfer."
+msgstr ""
+
+#. module: quick_quotation
+#. openerp-web
+#: code:addons/quick_quotation/static/src/xml/stock_barcode.xml:0
+#, python-format
+msgid "to open it."
+msgstr ""
