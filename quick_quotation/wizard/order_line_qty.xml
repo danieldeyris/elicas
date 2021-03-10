@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="set_order_line_qty" model="ir.ui.view">
+        <field name="name">set.order.line.qty.form</field>
+        <field name="model">set.order.line.qty</field>
+        <field name="arch" type="xml">
+            <form string="Package">
+<!--                <field name="order_line_id" invisible="1"/>-->
+                <group>
+                    <field name="product_uom_qty" />
+                </group>
+                <footer>
+                    <button name="set_qty" type="object" string="Save" class="btn-primary"/>
+                    <button string="Discard" special="cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>

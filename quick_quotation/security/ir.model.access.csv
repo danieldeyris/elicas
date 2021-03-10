@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_quick_sale_order,access_quick_sale_order,model_quick_sale_order,sales_team.group_sale_salesman,1,1,1,0
+access_quick_sale_order_line,access_quick_sale_order_line,model_quick_sale_order_line,sales_team.group_sale_salesman,1,1,1,1
+access_set_order_line_qty,access_set_order_line_qty,model_set_order_line_qty,sales_team.group_sale_salesman,1,1,1,0
