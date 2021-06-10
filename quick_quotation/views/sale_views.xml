@@ -30,7 +30,7 @@
                                 widget="section_and_note_one2many"
                                 mode="tree"
                                 attrs="{'readonly': [('state', 'in', ('done','cancel'))]}">
-                                <tree string="Sales Order Lines" editable="bottom" >
+                                <tree string="Sales Order Lines" editable="top" >
                                     <field name="sequence" widget="handle" />
                                     <field
                                         name="product_id"
