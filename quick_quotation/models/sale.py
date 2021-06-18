@@ -34,6 +34,14 @@ class QuickSaleOrder(models.Model):
 
     company_id = fields.Many2one('res.company', 'Company', required=True, index=True, default=lambda self: self.env.company)
 
+    last_product_id = fields.Many2one('product.product', string='Dernier article ajouté')
+
+    nb_articles = fields.Float(string='Nombre articles', compute="_compute_nb_articles")
+
+    def _compute_nb_articles(self):
+        for order in self:
+            order.nb_articles = sum(order.order_line.mapped('product_uom_qty'))
+
     def action_confirm_draft(self):
         if not self.partner_id:
             raise UserError(_('partner is mandatory.') )
@@ -64,8 +72,7 @@ class QuickSaleOrder(models.Model):
             ['|',('barcode', '=', barcode),('default_code', '=', barcode)]
             , limit=1)
         if product:
-            order_lines = self.order_line.filtered(
-                lambda r: r.product_id == product)
+            order_lines = self.order_line.filtered(lambda r: r.product_id == product)
             if order_lines:
                 order_line = order_lines[0]
                 qty = order_line.product_uom_qty
@@ -74,8 +81,10 @@ class QuickSaleOrder(models.Model):
                 newId = self.order_line.new({
                     'product_id': product.id,
                     'product_uom_qty': 1,
+                    'sequence': 0
                 })
                 self.order_line += newId
+            self.last_product_id = product
         else:
             raise UserError(
                 _('Scanned barcode %s is not related to any product.') %
@@ -85,7 +94,7 @@ class QuickSaleOrder(models.Model):
 class QuickSaleOrderLine(models.Model):
     _name = 'quick.sale.order.line'
     _description = 'Sales Order Line'
-    _order = 'order_id, sequence, id'
+    _order = 'order_id, id desc'
     _check_company_auto = True
 
     order_id = fields.Many2one('quick.sale.order', string='Order Reference', required=True, ondelete='cascade', index=True, copy=False)

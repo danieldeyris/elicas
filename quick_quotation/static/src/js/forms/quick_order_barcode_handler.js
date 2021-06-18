@@ -30,7 +30,7 @@ var QuickOrderBarcodeHandler = AbstractField.extend({
             fieldName: 'order_line',
             quantity: 'product_uom_qty',
             setQuantityWithKeypress: true,
-            notifyChange: false,
+            notifyChange: true,
             commands: {
                     barcode: '_barcodeAddX2MQuantity',
             }
