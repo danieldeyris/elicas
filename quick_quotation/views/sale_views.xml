@@ -22,6 +22,7 @@
                         <field name="partner_id" widget="res_partner_many2one" context="{'res_partner_search_mode': 'customer', 'show_address': 1, 'show_vat': True}" options='{"always_reload": True}'/>
                         <field name="company_id" invisible="1"/>
                         <field name="_barcode_scanned" widget="quick_order_barcode_handler"  readonly="1"/>
+                        <field name="last_product_id"  readonly="1" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
                     </group>
                     <notebook attrs="{'invisible': [('state', 'in', ['draft'])]}">
                         <page string="Order Lines" name="order_lines">
@@ -30,7 +31,7 @@
                                 widget="section_and_note_one2many"
                                 mode="tree"
                                 attrs="{'readonly': [('state', 'in', ('done','cancel'))]}">
-                                <tree string="Sales Order Lines" editable="top" >
+                                <tree string="Sales Order Lines" editable="top" default_order="id desc">
                                     <field name="sequence" widget="handle" />
                                     <field
                                         name="product_id"
