@@ -23,6 +23,7 @@
                         <field name="company_id" invisible="1"/>
                         <field name="_barcode_scanned" widget="quick_order_barcode_handler"  readonly="1"/>
                         <field name="last_product_id"  readonly="1" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
+                        <field name="nb_articles"  readonly="1" attrs="{'invisible': [('state', 'in', ['draft'])]}"/>
                     </group>
                     <notebook attrs="{'invisible': [('state', 'in', ['draft'])]}">
                         <page string="Order Lines" name="order_lines">
