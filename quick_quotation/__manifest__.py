@@ -2,7 +2,7 @@
   "name"                 :  "Quick Quotation",
   "summary"              :  """This module create a quotation in quick mode.""",
   "category"             :  "Sales",
-  "version"              :  "14.0.0.2",
+  "version"              :  "14.0.0.3",
   "sequence"             :  "10",
   "author"               :  "Phidias",
   "license"              :  "Other proprietary",
