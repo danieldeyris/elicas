@@ -13,7 +13,7 @@ from odoo.exceptions import UserError
 class QuickSaleOrder(models.Model):
     _name = 'quick.sale.order'
     _inherit = ['barcodes.barcode_events_mixin']
-    _description = "Sales Order"
+    _description = "Sales Order Quick"
     _order = 'id desc'
     _check_company_auto = True
 
@@ -37,6 +37,11 @@ class QuickSaleOrder(models.Model):
     last_product_id = fields.Many2one('product.product', string='Dernier article ajouté')
 
     nb_articles = fields.Float(string='Nombre articles', compute="_compute_nb_articles")
+
+    @api.onchange("order_line")
+    def _onchange_line(self):
+        for order in self:
+            order.nb_articles = sum(order.order_line.mapped('product_uom_qty'))
 
     def _compute_nb_articles(self):
         for order in self:
@@ -111,3 +116,8 @@ class QuickSaleOrderLine(models.Model):
     product_barcode = fields.Char(related='product_id.barcode')
 
     price_unit = fields.Float(related='product_id.list_price')
+
+    @api.onchange("product_id", "product_uom_qty")
+    def _onchange_product_id(self):
+        for line in self:
+            line.order_id.last_product_id = line.product_id
