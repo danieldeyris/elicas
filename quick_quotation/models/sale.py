@@ -121,3 +121,9 @@ class QuickSaleOrderLine(models.Model):
     def _onchange_product_id(self):
         for line in self:
             line.order_id.last_product_id = line.product_id
+
+    @api.onchange("product_uom_qty")
+    def _onchange_product_uom_qty(self):
+        for line in self:
+            if line.product_uom_qty > 10000000:
+                raise UserError(_('Quantité invalide : %s') %  line.product_uom_qty )
